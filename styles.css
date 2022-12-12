@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+html {
+  background-color: black;
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0rem 8rem;
+  position: relative;
+}
+.navbar {
+  padding: 1rem 0rem;
+  margin-top: 2rem;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  display: inline;
+  font-size: x-large;
+  font-weight: 700;
+  font-family: "Oleo Script", cursive;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  /* border: 1px solid white; */
+  gap: 6rem;
+}
+.links li a {
+  transition: all 300ms ease-in-out;
+}
+.links li a {
+  color: white;
+  text-decoration: none;
+}
+.links li a:hover {
+  color: #ffc93a;
+  cursor: pointer;
+}
+.landingSec {
+  padding: 2rem 3rem;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+}
+.oneliner {
+  font-size: small;
+  font-weight: 200;
+  color: #ffc93a;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+.landingSec div h1 {
+  margin-bottom: 1rem;
+}
+.typewriter {
+  max-width: fit-content;
+}
+/* */
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  width: 100%;
+  font-size: xx-large;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #ffc93a; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffc93a;
+  }
+}
+
+.tag {
+  background-image: linear-gradient(
+    to right,
+    #db469f,
+    #c956bf,
+    #ab67db,
+    #7d79f1,
+    #2188ff
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.quickInfo {
+  font-size: small;
+  font-weight: 200;
+  color: white;
+  max-width: 480px;
+  margin-bottom: 2rem;
+}
+.btn {
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffc93a;
+  border: 1px solid #ffc93a;
+  border-radius: 5px;
+  font-family: "JetBrains Mono", monospace;
+}
+.info {
+  /* border: 1px solid white; */
+  padding: 2rem 3rem;
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+}
+.aboutme {
+  color: white;
+  margin-bottom: 2rem;
+  font-size: small;
+  font-weight: 200;
+  line-height: 20px;
+}
+.career {
+  color: white;
+  margin-bottom: 2rem;
+  font-size: small;
+  font-weight: 200;
+  max-width: 400px;
+  margin-top: 1rem;
+  line-height: 20px;
+}
+.wrapInfo h1:nth-child(3) {
+  max-width: 300px;
+}
+.wrapInfo h1:last-child {
+  max-width: 480px;
+}
+.wrapInfo span {
+  color: #ffc93a;
+}
+.sec_title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.sec_title h1 {
+  font-size: x-large;
+  font-weight: 600;
+  margin-right: 3rem;
+}
+.sec_title div {
+  background-color: #b3b3b3;
+  height: 0.5px;
+  flex-basis: 200px;
+  /* width: 200px; */
+}
+.tech {
+  /* border: 1px solid white; */
+  margin-top: 2rem;
+  margin-left: 1rem;
+  padding: 1rem;
+  display: flex;
+}
+.tech ul:first-child {
+  margin-right: 4rem;
+}
+.tech ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.tech ul li {
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  font-size: small;
+  font-weight: 300;
+}
+.tech ul li img {
+  margin-right: 1rem;
+  width: 12px;
+  height: 12px;
+}
+.testimonial {
+  padding: 4rem 3rem;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid white; */
+}
+.testimonialsWrap {
+  /* border: 1px solid white; */
+  width: 100%;
+}
+.testimonialsWrap h1.tag {
+  font-size: xx-large;
+  font-weight: 800;
+  text-align: center;
+}
+.reviews_tag {
+  padding: 0rem 2rem;
+  text-align: center;
+  font-size: small;
+  font-weight: 200;
+  color: white;
+  margin: 1rem auto 4rem auto;
+  max-width: 600px;
+}
+.reviews {
+  min-height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.candidate {
+  max-width: 280px;
+  padding: 1rem;
+  text-align: center;
+  background-color: #323232;
+}
+.candidate p {
+  font-size: small;
+  font-weight: 200;
+  margin-bottom: 2em;
+}
+.candidate h2 {
+  font-size: medium;
+  font-weight: 100;
+  margin: 1em 0em;
+}
+p.cand_add {
+  color: #a8a8a8;
+  margin-bottom: 0em;
+}
+.midcan {
+  align-self: flex-start;
+}
+
+.film {
+  padding: 4rem 3rem;
+  min-height: 420px;
+  /* display: flex;
+  align-items: center; */
+}
+a {
+  text-decoration: none;
+}
+
+.swiper {
+  max-width: 800px;
+  height: 350px;
+  /* background-color: rgba(255, 255, 255, 0.18); */
+}
+.swiper-slide {
+  max-width: 400px;
+}
+.card {
+  cursor: pointer;
+}
+.card img {
+  width: 100%;
+  height: 220px;
+}
+.info-styles {
+  text-align: center;
+}
+.info-styles h2 {
+  font-size: large;
+  color: #ffc93a;
+  margin-top: 0.15em;
+}
+.info-styles h3 {
+  font-weight: 100;
+  font-size: medium;
+  color: white;
+  margin: 0.25em 0em;
+}
+.info-styles p {
+  font-weight: 100;
+  font-size: 0.65em;
+  margin-bottom: 0.5em;
+  color: #a8a8a8;
+}
+.categories {
+  margin-bottom: 5em;
+  /* margin-left: 6%; */
+}
+.categories ul {
+  display: flex;
+  /* border: 1px solid white; */
+  list-style: none;
+}
+.categories ul li button {
+  padding: 0.5rem 1rem;
+  background-color: black;
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+  border-top: 1.2px solid #cecece;
+  cursor: pointer;
+  border-radius: 0%;
+  outline: none;
+}
+.categories ul li button:hover {
+  color: #ffc93a;
+  border-top: 1.2px solid #ffc93a;
+}
+.categories ul li button.active {
+  color: #ffc93a;
+  border-top: 1.2px solid #ffc93a;
+}
+footer {
+  position: fixed;
+  bottom: 0%;
+  left: 2%;
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.icon_links {
+  width: 24px;
+  height: 24px;
+  transition: all 200ms ease-in;
+}
+.icon_links:hover {
+  transform: scale(1.1, 1.1);
+}
+footer div {
+  width: 1px;
+  height: 180px;
+  background-color: white;
+  margin-top: 2em;
+}
+footer p {
+  display: none;
+}
+@media screen and (max-width: 1230px) {
+  .reviews {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .midcan {
+    align-self: center;
+    margin: 2rem 0rem;
+  }
+}
+@media screen and (max-width: 920px) {
+  body {
+    padding: 0rem 2rem;
+  }
+  .links {
+    display: none;
+  }
+  .landingSec h1 {
+    font-size: x-large;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  .landingSec {
+    padding: 3rem 1rem;
+  }
+  .info {
+    padding: 3rem 1rem;
+  }
+  .testimonial {
+    padding: 3rem 1rem 8rem 1rem;
+  }
+  .film {
+    padding: 4rem 1rem;
+  }
+  footer {
+    position: absolute;
+    bottom: 10px;
+    display: block;
+    text-align: center;
+    width: 95%;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+  }
+  footer div {
+    display: none;
+  }
+  footer p {
+    display: block;
+    font-size: x-small;
+    font-weight: 100;
+    margin-top: 1em;
+  }
+}
+@media screen and (max-width: 550px) {
+  .tech {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .reviews_tag {
+    padding: 0rem 0rem;
+  }
+  .typewriter h1 {
+    font-size: medium;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid #ffc93a; /* The typwriter cursor */
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
+  .categories ul {
+    display: flex;
+    /* border: 1px solid white; */
+    list-style: none;
+  }
+  .categories ul li button {
+    padding: 0.5rem 0.15rem;
+    font-size: xx-small;
+  }
+}
+/*
+ ---------------------------------------------------------------------------------
+ */
